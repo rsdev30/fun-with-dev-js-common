@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "npm": "^5.10.0"
+  },
+   "scripts": {
+    "build": "npm run build",
+    "public": "npm run publish --access public"
   }
 }
