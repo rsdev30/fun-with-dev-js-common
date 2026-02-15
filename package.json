@@ -1,9 +1,6 @@
 {
   "name": "fun-with-dev-js-common",
   "version": "0.1.0",
-  "dependencies": {
-    "npm": "^5.10.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rsdev30/fun-with-dev-js-common.git"
