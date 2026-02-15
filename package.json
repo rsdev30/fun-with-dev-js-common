@@ -1,5 +1,6 @@
 {
   "name": "fun-with-dev-js-common",
+  "version": "0.1.0",
   "dependencies": {
     "npm": "^5.10.0"
   },
