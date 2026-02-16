@@ -8,7 +8,7 @@
   "scripts": {
     "build": "npm run build",
     "publish": "npm run publish --access public",
-    "test": "npm run test"
+    "test": "node ./test/bubble-sort.test.js"
   },
   "dependencies": {
     "npm": "^4.6.1"
