@@ -45,6 +45,8 @@ jobs:
         id: gitversion
       - name: Set npm package version from GitVersion
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           echo "Setting package.json version to ${{ steps.gitversion.outputs.FullSemVer }}"
           npm version "${{ steps.gitversion.outputs.FullSemVer }}" --no-git
         env:
