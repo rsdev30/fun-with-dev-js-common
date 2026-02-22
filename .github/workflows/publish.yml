@@ -47,6 +47,8 @@ jobs:
         run: |
           echo "Setting package.json version to ${{ steps.gitversion.outputs.FullSemVer }}"
           npm version "${{ steps.gitversion.outputs.FullSemVer }}" --no-git
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
