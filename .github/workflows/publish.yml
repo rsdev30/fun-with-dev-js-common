@@ -27,11 +27,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - name: GitVersion
+        uses: GitTools/actions/gitversion/execute@v0.10.7
+        id: gitversion
+      - name: Set npm package version from GitVersion
+        run: |
+          echo "Setting package.json version to ${{ steps.gitversion.outputs.FullSemVer }}"
+          npm version "${{ steps.gitversion.outputs.FullSemVer }}" --no-git
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
