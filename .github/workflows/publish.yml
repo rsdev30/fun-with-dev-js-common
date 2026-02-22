@@ -34,9 +34,12 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - name: GitVersion
-        uses: GitTools/actions/gitversion/execute@v0.10.7
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v4.3.2
         id: gitversion
+        with:
+          versionSpec: '6.6.x'
+          preferLatestVersion: true
       - name: Set npm package version from GitVersion
         run: |
           echo "Setting package.json version to ${{ steps.gitversion.outputs.FullSemVer }}"
