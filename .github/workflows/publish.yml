@@ -36,10 +36,13 @@ jobs:
       - run: npm ci
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v4.3.2
-        id: gitversion
+        id: installgitversion
         with:
           versionSpec: '6.6.x'
           preferLatestVersion: true
+      - name: Determine version using GitVersion
+        uses: gittools/actions/gitversion/execute@v4.3.2
+        id: gitversion
       - name: Set npm package version from GitVersion
         run: |
           echo "Setting package.json version to ${{ steps.gitversion.outputs.FullSemVer }}"
