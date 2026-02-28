@@ -1,5 +1,4 @@
-﻿/* JavaScript bubble sort utilities */
-const swap = (arr, i, j) => { const t = arr[i]; arr[i] = arr[j]; arr[j] = t; };
+﻿function swap(arr, i, j) { const t = arr[i]; arr[i] = arr[j]; arr[j] = t; }
 
 function bubbleSortInPlace(arr, compare = (a,b) => (a < b ? -1 : a > b ? 1 : 0)) {
   if (!Array.isArray(arr)) throw new TypeError('arr must be an array');
@@ -33,4 +32,5 @@ function bubbleSortStep(arr, compare = (a,b) => (a < b ? -1 : a > b ? 1 : 0)) {
   return { array: a, swapped };
 }
 
-export default { swap, bubbleSortInPlace, bubbleSort, bubbleSortStep };
+const bubbleSortUtils = { swap, bubbleSortInPlace, bubbleSort, bubbleSortStep };
+export default bubbleSortUtils;
