@@ -43,5 +43,4 @@ function insertionSortStep(arr, compare = (a,b) => (a < b ? -1 : a > b ? 1 : 0))
   return { array: a, swapped };
 }
 
-const insertionSortUtils = { insertionSortInPlace, insertionSort, insertionSortStep };
-export default insertionSortUtils;
+export { insertionSortInPlace, insertionSort, insertionSortStep };

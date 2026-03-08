@@ -37,6 +37,4 @@ function selectionSortStep(arr, compare = (a,b) => (a < b ? -1 : a > b ? 1 : 0))
   return { array: a, swapped };
 }
 
-//export default { swap, selectionSortInPlace, selectionSort, selectionSortStep };
-const selectionSortUtils = { swap, selectionSortInPlace, selectionSort, selectionSortStep };
-export default selectionSortUtils;
+export { swap, selectionSortInPlace, selectionSort, selectionSortStep };

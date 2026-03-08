@@ -1,6 +1,6 @@
-const test = require("node:test");
-const assert = require("node:assert");
-const { merge, mergeSortInPlace, mergeSort, mergeSortStep } = require("../src/Utils/Sorting/mergeSort").default;
+import test from "node:test";
+import assert from "node:assert";
+import { merge, mergeSortInPlace, mergeSort, mergeSortStep } from "../src/Utils/Sorting/mergeSort.js";
 
 test("mergeSortInPlace sorts in place and returns same array", () => {
   const a = [38, 27, 43, 3, 9, 82, 10];

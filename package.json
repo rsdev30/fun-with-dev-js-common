@@ -1,5 +1,20 @@
 {
   "name": "fun-with-dev-js-common",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./Utils/BubbleSort": "./src/Utils/Sorting/bubbleSort.js",
+    "./Utils/Sorting/bubbleSort": "./src/Utils/Sorting/bubbleSort.js",
+    "./Utils/InsertionSort": "./src/Utils/Sorting/insertionSort.js",
+    "./Utils/Sorting/insertionSort": "./src/Utils/Sorting/insertionSort.js",
+    "./Utils/MergeSort": "./src/Utils/Sorting/mergeSort.js",
+    "./Utils/Sorting/mergeSort": "./src/Utils/Sorting/mergeSort.js",
+    "./Utils/QuickSort": "./src/Utils/Sorting/quickSort.js",
+    "./Utils/Sorting/quickSort": "./src/Utils/Sorting/quickSort.js",
+    "./Utils/SelectionSort": "./src/Utils/Sorting/selectionSort.js",
+    "./Utils/Sorting/selectionSort": "./src/Utils/Sorting/selectionSort.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rsdev30/fun-with-dev-js-common.git"

@@ -1,6 +1,6 @@
-﻿const test = require("node:test");
-const assert = require("node:assert");
-const { swap, bubbleSortInPlace, bubbleSort, bubbleSortStep, bubbleSortGen } = require("../src/Utils/Sorting/bubbleSort").default;
+﻿import test from "node:test";
+import assert from "node:assert";
+import { swap, bubbleSortInPlace, bubbleSort, bubbleSortStep, bubbleSortGen } from "../src/Utils/Sorting/bubbleSort.js";
 
 test("swap swaps elements in place", () => {
   const a = [1,2,3];

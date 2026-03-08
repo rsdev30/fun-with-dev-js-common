@@ -44,5 +44,4 @@ function quickSortStep(arr, compare = (a,b) => (a < b ? -1 : a > b ? 1 : 0)) {
   return { array: a, swapped: true };
 }
 
-const quickSortUtils = { partition, quickSortInPlace, quickSort, quickSortStep };
-export default quickSortUtils;
+export { partition, quickSortInPlace, quickSort, quickSortStep };

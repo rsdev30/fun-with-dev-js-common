@@ -1,6 +1,6 @@
-const test = require("node:test");
-const assert = require("node:assert");
-const { partition, quickSortInPlace, quickSort, quickSortStep } = require("../src/Utils/Sorting/quickSort").default;
+import test from "node:test";
+import assert from "node:assert";
+import{ partition, quickSortInPlace, quickSort, quickSortStep } from "../src/Utils/Sorting/quickSort.js";
 
 test("quickSortInPlace sorts in place and returns same array", () => {
   const a = [64, 34, 25, 12, 22, 11, 90];

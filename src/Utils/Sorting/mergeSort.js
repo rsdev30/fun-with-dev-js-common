@@ -48,5 +48,4 @@ function mergeSortStep(arr, compare = (a,b) => (a < b ? -1 : a > b ? 1 : 0)) {
   return { array: a, swapped: true };
 }
 
-const mergeSortUtils = { merge, mergeSortInPlace, mergeSort, mergeSortStep };
-export default mergeSortUtils;
+export { merge, mergeSortInPlace, mergeSort, mergeSortStep };
