@@ -5,6 +5,7 @@
   "exports": {
     ".": "./src/index.js",
     "./Utils/BubbleSort": "./src/Utils/Sorting/bubbleSort.js",
+    "./Utils/BubbleSortGen": "./src/Utils/Sorting/bubbleSortGen.js",
     "./Utils/Sorting/bubbleSort": "./src/Utils/Sorting/bubbleSort.js",
     "./Utils/InsertionSort": "./src/Utils/Sorting/insertionSort.js",
     "./Utils/Sorting/insertionSort": "./src/Utils/Sorting/insertionSort.js",
