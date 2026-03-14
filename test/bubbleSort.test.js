@@ -1,7 +1,7 @@
 ﻿import test from "node:test";
 import assert from "node:assert";
-import { swap, bubbleSortInPlace, bubbleSort, bubbleSortStep, bubbleSortGen } from "../src/Utils/Sorting/bubbleSort.js";
-
+import { swap, bubbleSortInPlace, bubbleSort, bubbleSortStep} from "../src/Utils/Sorting/bubbleSort.js";
+import { bubbleSortGen } from "../src/Utils/Sorting/bubbleSortGen.js";
 test("swap swaps elements in place", () => {
   const a = [1,2,3];
   swap(a, 0, 2);
