@@ -1,5 +1,5 @@
 //Generator version for visualization purposes
-export function* bubbleSortGen(array) {
+export const bubbleSortGen = function* (array) {
   const arr = array.slice();
   const n = arr.length;
 
