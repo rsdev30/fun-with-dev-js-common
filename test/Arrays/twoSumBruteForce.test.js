@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert";
-import { findTwoSum } from "../../src/Utils/Arrays/TwoSumBruteForce.js";
+import { findTwoSum } from "../../src/Utils/Arrays/twoSumBruteForce.js";
 
 test("findTwoSum returns indices of two numbers that add up to target", () => {
   const array = [2, 7, 11, 15];
