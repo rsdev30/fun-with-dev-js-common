@@ -14,7 +14,8 @@
     "./Utils/QuickSort": "./src/Utils/Sorting/quickSort.js",
     "./Utils/Sorting/quickSort": "./src/Utils/Sorting/quickSort.js",
     "./Utils/SelectionSort": "./src/Utils/Sorting/selectionSort.js",
-    "./Utils/Sorting/selectionSort": "./src/Utils/Sorting/selectionSort.js"
+    "./Utils/Sorting/selectionSort": "./src/Utils/Sorting/selectionSort.js",
+    "./Utils/Arrays/TwoSumBruteForce": "./src/Utils/Arrays/TwoSumBruteForce.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "publish2": "npm publish --access public",
-    "test": "node ./test/selectionSort.test.js && node ./test/bubbleSort.test.js && node ./test/mergeSort.test.js && node ./test/quickSort.test.js && node ./test/insertionSort.test.js"
+    "test": "node ./test/selectionSort.test.js && node ./test/bubbleSort.test.js && node ./test/mergeSort.test.js && node ./test/quickSort.test.js && node ./test/insertionSort.test.js && node ./test/Arrays/twoSumBruteForce.test.js"
   },
   "dependencies": {
     "npm": "^5.10.0"
