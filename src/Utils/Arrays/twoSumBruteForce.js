@@ -8,13 +8,12 @@ function findTwoSum(array, targetSum) {
 	let n = array.length;
 	
 	for(let i=0; i < n; i++) {
-		
 		//let array = [2,3,4]
 		//i+1 is the next element in the array, if i=0 with 2, then j=1 with value 3 as an example
-		for(let j=i+1; j < n; i++) {
+		for(let j=i+1; j < n; j++) {
 			if(array[i] + array[j] === targetSum){
-				arrayList = [...arrayList,i,j];
-				return arrayList;
+				let pair = [i, j];
+				arrayList = [...arrayList,pair];
 			}
 		}
 	}
@@ -22,4 +21,4 @@ function findTwoSum(array, targetSum) {
 	return arrayList;
 }
 
-export { findTwoSum };
+export default findTwoSum;

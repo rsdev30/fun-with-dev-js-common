@@ -23,7 +23,8 @@
   },
   "scripts": {
     "publish2": "npm publish --access public",
-    "test": "node ./test/selectionSort.test.js && node ./test/bubbleSort.test.js && node ./test/mergeSort.test.js && node ./test/quickSort.test.js && node ./test/insertionSort.test.js && node ./test/twoSumBruteForce.test.js"
+    "test": "node ./test/selectionSort.test.js && node ./test/bubbleSort.test.js && node ./test/mergeSort.test.js && node ./test/quickSort.test.js && node ./test/insertionSort.test.js && node ./test/twoSumBruteForce.test.js",
+    "testTwoSum": "node ./test/twoSumBruteForce.test.js"
   },
   "dependencies": {
     "npm": "^5.10.0"
