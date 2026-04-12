@@ -15,7 +15,8 @@
     "./Utils/Sorting/quickSort": "./src/Utils/Sorting/quickSort.js",
     "./Utils/SelectionSort": "./src/Utils/Sorting/selectionSort.js",
     "./Utils/Sorting/selectionSort": "./src/Utils/Sorting/selectionSort.js",
-    "./Utils/Arrays/twoSumBruteForce": "./src/Utils/Arrays/twoSumBruteForce.js"
+    "./Utils/Arrays/TwoSumBruteForce": "./src/Utils/Arrays/twoSumBruteForce.js",
+    "./Utils/Arrays/TwoSumHashMap": "./src/Utils/Arrays/twoSumHashMap.js"
   },
   "repository": {
     "type": "git",
